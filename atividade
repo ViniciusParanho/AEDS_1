@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int numero, pares = 0, impares = 0;
+
+    printf("Digite os numeros (digite 0 para sair):\n");
+
+    do {
+        scanf("%d", &numero);
+
+        if (numero != 0) {
+            if (numero % 2 == 0) {
+                pares++;
+            } else {
+                impares++;
+            }
+        }
+    } while (numero != 0);
+
+    printf("Quantidade de numeros pares: %d\n", pares);
+    printf("Quantidade de numeros impares: %d\n", impares);
+
+    return 0;
+}
